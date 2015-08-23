@@ -1,8 +1,8 @@
 var React = require('react');
 
-var Test = require('./components/Test.react');
+var TestApp = require('./components/TestApp.react');
 
 React.render(
-  <Test />,
+  <TestApp />,
   document.getElementById('content')
 );

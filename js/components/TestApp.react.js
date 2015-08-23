@@ -2,28 +2,34 @@ var React = require('react');
 var TestStore = require('../stores/TestStore');
 var TestActions = require('../actions/TestActions');
 
-console.log("[COMPONENTS] Create Test component");
-var Test = React.createClass({
+console.log("[COMPONENTS] Create TestApp component");
+
+var TestApp = React.createClass({
+
   getInitialState: function(){
   console.log("[TEST] getInitialState");
     return {
-      count: testStore.getCount()
+      count: TestStore.getCount()
     }
   },
+
   componentDidMount: function(){
   console.log("[TEST] componentDidMount");
-    testStore.addChangeListener(this._onChange);
+    TestStore.addChangeListener(this._onChange);
   },
+
   componentWillUnmount: function(){
   console.log("[TEST] componentWillUnmount");
-    testStore.removeChangeListener(this._onChange);
+    TestStore.removeChangeListener(this._onChange);
   },
+
   _onChange: function(){
     console.log("[TEST] _onChange");
     this.setState({
-      list: testStore.getCount()
+      list: TestStore.getCount()
     })
   },
+
   render: function() {
     console.log("[TEST] render");
     return (
@@ -33,3 +39,5 @@ var Test = React.createClass({
     );
   }
 });
+
+module.exports = TestApp;
