@@ -19,6 +19,10 @@ var TestStore = assign({}, EventEmitter.prototype, {
     console.log("[STORES] testStore.getCount");
     return _store.count;
   },
+  reinitCount: function(){
+    console.log("[STORES] testStore.getCount");
+    _store.count = 0;     
+  }
 });
 
 console.log("[STORES] AppDispatcher.register");
