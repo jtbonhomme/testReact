@@ -24,10 +24,9 @@ var TestStore = assign({}, EventEmitter.prototype, {
 console.log("[STORES] AppDispatcher.register");
 AppDispatcher.register(function(action){
   console.log("[STORES] received payload");
-  var payload = action.action;
-  switch(payload.actionType){
+  switch(action.actionType){
     case "INCREASE_COUNT":
-      _store.count+=payload.data;
+      _store.count+=action.data;
       TestStore.emit(CHANGE_EVENT);
       break;
     default:

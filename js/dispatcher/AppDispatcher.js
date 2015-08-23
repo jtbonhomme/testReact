@@ -5,7 +5,8 @@ console.log("[DISPATCHER] AppDispatcher.handleAction");
 AppDispatcher.handleAction = function(action){
   this.dispatch({
     source: 'VIEW_ACTION',
-    action: action
+    actionType: action.actionType,
+    data: action.data
   });
 };
 
