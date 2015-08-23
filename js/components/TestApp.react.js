@@ -26,7 +26,7 @@ var TestApp = React.createClass({
   _onChange: function(){
     console.log("[TEST] _onChange");
     this.setState({
-      list: TestStore.getCount()
+      count: TestStore.getCount()
     })
   },
 
