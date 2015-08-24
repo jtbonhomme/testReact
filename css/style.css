@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(65, 47, 63);
+}
+
+@font-face {
+font-family: "HelveticaNeue-Thin";
+src: ~"url('fonts/HelveticaNeue-Thin.otf')" format('opentype');
+}
+
+#content {
+  margin: 15px auto;
+  color: white;
+  font-size: 18px;
+  font-family: "HelveticaNeue-Thin";
+}
+
+#count {
+  margin: 60px auto;
+  width: 100%;
+  height: 100%;
+  font-size: 120px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "HelveticaNeue-Thin";
+}
+

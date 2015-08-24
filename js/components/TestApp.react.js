@@ -33,7 +33,7 @@ var TestApp = React.createClass({
   render: function() {
     console.log("[TEST] render");
     return (
-      <div id="count" style={{fontSize: '18em', fontWeight: 'bold', fontFamily: 'Helvetica Neue', textAlign: 'center', color: '#ffffff'}}>
+      <div id='count'>
         {this.state.count}
       </div>
     );
