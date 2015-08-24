@@ -1,10 +1,13 @@
 TEST REACT
 ----------
 
-Installation
-============
+Exemple 1: react-flux
+=====================
+
+* Installation
 
 ```
+% cd react-flux
 % npm install
 % npm start
 % python -m SimpleHTTPServer 8080
