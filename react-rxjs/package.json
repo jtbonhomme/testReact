@@ -19,9 +19,10 @@
     "watchify": "^2.1.1"
   },
   "dependencies": {
-    "flux": "^2.1.1",
+    "es6-promise": "^3.0.2",
     "object-assign": "^1.0.0",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "rx": "^3.1.1"
   },  
   "browserify": {
     "transform": [
